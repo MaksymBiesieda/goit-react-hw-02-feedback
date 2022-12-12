@@ -6,19 +6,12 @@ import FeedbackOptions from './FeedBackOptions/FeedbackOptions ';
 import Notification from './Notification/Notification';
 
 export default class App extends Component {
-
-  static defaultProps = {
-    initialValue: 0,
-  };
-  static propTypes = {
-    initialValue: PropTypes.number.isRequired,
-  };
   
    
   state = {
-  good: this.props.initialValue,
-  neutral: this.props.initialValue,
-  bad: this.props.initialValue,
+  good: 0,
+  neutral: 0,
+  bad: 0,
   } 
 
   updatingState = (name) => {
